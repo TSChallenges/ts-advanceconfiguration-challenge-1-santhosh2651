@@ -3,3 +3,6 @@
 
 #Sample output: 
   # Suspicious Transactions:  2024-10-26 14:10:32 | Account: 67890 | Withdraw: 50000
+
+LIMIT_AMOUNT=50000
+Suspicious Transactions=$(grep -E ")

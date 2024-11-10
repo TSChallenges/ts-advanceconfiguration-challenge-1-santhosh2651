@@ -5,7 +5,11 @@ username=$1
 account_number=$2
 
 # Default balance for new accounts
-default_balance= #todo
+
+sudo useradd -m -s /bin/bash "$username"
+
+account_entry="Username: $username\n| Account: $account_number\n |Balance: 1000\n"
+echo -e "$account_entry" >> accounts.txt
 
 # Check if account already exists in accounts.txt
 #todo
